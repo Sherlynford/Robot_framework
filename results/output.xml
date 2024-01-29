@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.0rc2 on win32)" generated="2024-01-29T10:34:32.321556" rpa="false" schemaversion="5">
+<suite id="s1" name="RF-65022410" source="C:\Users\User\Desktop\RF-65022410">
+<suite id="s1-s1" name="RF" source="C:\Users\User\Desktop\RF-65022410\RF.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T10:34:32.466073" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>https://automationexercise.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T10:34:32.465077" elapsed="5.120152"/>
+</kw>
+<test id="s1-s1-t1" name="Register and show OTP" line="38">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:37.594199" level="INFO">Current page contains element '//*[@id="header"]/div/div/div/div[1]'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:34:37.587222" elapsed="0.006977"/>
+</kw>
+<kw name="Click Contact nav">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:37.596192" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[8]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[8]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:37.595192" elapsed="0.857578"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:34:37.595192" elapsed="0.857578"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.459746" level="INFO">Current page contains element '//*[@id="contact-page"]/div[2]/div[1]/div/h2'.</msg>
+<arg>//*[@id="contact-page"]/div[2]/div[1]/div/h2</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.452770" elapsed="0.006976"/>
+</kw>
+<kw name="Input อีเมล">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.460691" level="INFO">Typing text '65022410@up.ac.th' into text field '//*[@id="contact-us-form"]/div[2]/input'.</msg>
+<arg>//*[@id="contact-us-form"]/div[2]/input</arg>
+<arg>${อีเมล}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.460691" elapsed="0.047837"/>
+</kw>
+<arg>${อีเมล}</arg>
+<status status="PASS" start="2024-01-29T10:34:38.459746" elapsed="0.048782"/>
+</kw>
+<kw name=" Input ชื่อ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.509528" level="INFO">Typing text 'chatchai' into text field '//*[@id="contact-us-form"]/div[1]/input'.</msg>
+<arg>//*[@id="contact-us-form"]/div[1]/input</arg>
+<arg>${ชื่อ}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.509528" elapsed="0.049831"/>
+</kw>
+<arg>${ชื่อ}</arg>
+<status status="PASS" start="2024-01-29T10:34:38.508528" elapsed="0.050831"/>
+</kw>
+<kw name="Input เรื่อง">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.561352" level="INFO">Typing text 'test' into text field '//*[@id="contact-us-form"]/div[3]/input'.</msg>
+<arg>//*[@id="contact-us-form"]/div[3]/input</arg>
+<arg>${เรื่อง}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.560355" elapsed="0.048836"/>
+</kw>
+<arg>${เรื่อง}</arg>
+<status status="PASS" start="2024-01-29T10:34:38.560355" elapsed="0.048836"/>
+</kw>
+<kw name="Input ข้อความ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.610187" level="INFO">Typing text 'rolem ipsum' into text field '//*[@id="message"]'.</msg>
+<arg>//*[@id="message"]</arg>
+<arg>${ข้อความ}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.610187" elapsed="0.032890"/>
+</kw>
+<arg>${ข้อความ}</arg>
+<status status="PASS" start="2024-01-29T10:34:38.609191" elapsed="0.033886"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.644078" level="INFO">Sending C:\Users\User\Desktop\RF-65022410\ C:\Users\User\Pictures\Screenshots\images.jpg to browser.</msg>
+<arg>//*[@id="contact-us-form"]/div[5]/input</arg>
+<arg>file_path= C:\\Users\\User\\Pictures\\Screenshots\\images.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.644078" elapsed="0.015943"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.660021" level="INFO">Clicking button '//*[@id="contact-us-form"]/div[6]/input'.</msg>
+<arg>//*[@id="contact-us-form"]/div[6]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:38.660021" elapsed="0.029900"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:34:38.660021" elapsed="0.030897"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:38.690918" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2024-01-29T10:34:38.693907" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: Press OK to proceed!
+Message: unexpected alert open: {Alert text : Press OK to proceed!}
+  (Session info: chrome=121.0.6167.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A85E42+3538674]
+	(No symbol) [0x00007FF6B06A4C02]
+	(No symbol) [0x00007FF6B0555AEB]
+	(No symbol) [0x00007FF6B05DC55E]
+	(No symbol) [0x00007FF6B05BEE53]
+	(No symbol) [0x00007FF6B058F514]
+	(No symbol) [0x00007FF6B0590631]
+	GetHandleVerifier [0x00007FF6B0AB6CAD+3738973]
+	GetHandleVerifier [0x00007FF6B0B0C506+4089270]
+	GetHandleVerifier [0x00007FF6B0B04823+4057299]
+	GetHandleVerifier [0x00007FF6B07D5C49+720121]
+	(No symbol) [0x00007FF6B06B126F]
+	(No symbol) [0x00007FF6B06AC304]
+	(No symbol) [0x00007FF6B06AC432]
+	(No symbol) [0x00007FF6B069BD04]
+	BaseThreadInitThunk [0x00007FFC50417034+20]
+	RtlUserThreadStart [0x00007FFC514C26A1+33]
+</msg>
+<msg time="2024-01-29T10:34:38.696898" level="FAIL">ValueError: Invalid alert action 'ACCEPT=TRUE'.</msg>
+<var>${alert_message}</var>
+<arg>accept=true</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="FAIL" start="2024-01-29T10:34:38.690918" elapsed="0.006976">ValueError: Invalid alert action 'ACCEPT=TRUE'.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${alert_message}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-01-29T10:34:38.698892" elapsed="0.000000"/>
+</kw>
+<kw name="Click OK Button">
+<status status="NOT RUN" start="2024-01-29T10:34:38.699888" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>//*[@id="contact-page"]/div[2]/div[1]/div/div[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-01-29T10:34:38.699888" elapsed="0.000000"/>
+</kw>
+<kw name="Click Home Button">
+<status status="NOT RUN" start="2024-01-29T10:34:38.700885" elapsed="0.000000"/>
+</kw>
+<doc>This testcase is expected to see OTP page</doc>
+<status status="FAIL" start="2024-01-29T10:34:37.585229" elapsed="1.115656">ValueError: Invalid alert action 'ACCEPT=TRUE'.</status>
+</test>
+<doc>Example test Robotframework SE Class</doc>
+<status status="FAIL" start="2024-01-29T10:34:32.343485" elapsed="6.359393"/>
+</suite>
+<status status="FAIL" start="2024-01-29T10:34:32.325543" elapsed="6.378331"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RF-65022410">RF-65022410</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="RF">RF-65022410.RF</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-01-29T10:34:38.693907" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: Press OK to proceed!
+Message: unexpected alert open: {Alert text : Press OK to proceed!}
+  (Session info: chrome=121.0.6167.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A85E42+3538674]
+	(No symbol) [0x00007FF6B06A4C02]
+	(No symbol) [0x00007FF6B0555AEB]
+	(No symbol) [0x00007FF6B05DC55E]
+	(No symbol) [0x00007FF6B05BEE53]
+	(No symbol) [0x00007FF6B058F514]
+	(No symbol) [0x00007FF6B0590631]
+	GetHandleVerifier [0x00007FF6B0AB6CAD+3738973]
+	GetHandleVerifier [0x00007FF6B0B0C506+4089270]
+	GetHandleVerifier [0x00007FF6B0B04823+4057299]
+	GetHandleVerifier [0x00007FF6B07D5C49+720121]
+	(No symbol) [0x00007FF6B06B126F]
+	(No symbol) [0x00007FF6B06AC304]
+	(No symbol) [0x00007FF6B06AC432]
+	(No symbol) [0x00007FF6B069BD04]
+	BaseThreadInitThunk [0x00007FFC50417034+20]
+	RtlUserThreadStart [0x00007FFC514C26A1+33]
+</msg>
+</errors>
+</robot>
